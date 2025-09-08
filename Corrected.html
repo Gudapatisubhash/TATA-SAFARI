@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(https://wallpaperaccess.com/full/13374291.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; /* Center the background image */
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px; /* Add space between nav and login container */
+        }
+        nav h1 {
+            background-color: bisque;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .login-container {
+            background-color: transparent;
+            padding: 40px;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column; /* Stack h2 and form vertically */
+            align-items: center; /* Center items inside the container */
+            max-width: 400px; /* Prevent container from being too wide */
+            width: 90%;
+        }
+        .form-group {
+            margin-bottom: 15px; /* Add space between form fields */
+            width: 100%;
+        }
+        .form-group label {
+            display: block; /* Place label on its own line */
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Include padding in the width */
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>TATA SAFARI</h1>
+        <div>
+            <a href="https://www.tatamotors.com/organisation/"><button>HOME</button></a>
+            <a href="https://www.tatamotors.com/passenger-vehicles/"><button>BUSINESS</button></a>
+            <a href="https://www.tatamotors.com/future-of-mobility/"><button>FUTURE OF MOBILITY</button></a>
+            <a href="https://www.tatamotors.com/careers/"><button>CAREERS</button></a>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>LOGIN WEB PAGE</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">USERNAME</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">DATE OF BIRTH</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
